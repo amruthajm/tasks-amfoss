@@ -1,0 +1,6 @@
+from PIL import Images
+l=Image.open('oswald.png')
+l=l.convert('1')
+l.save('o.png')
+l.rotate(270).save('o.png')
+l.transpose(Image.FLIP_LEFT_RIGHT).save('o.png')
